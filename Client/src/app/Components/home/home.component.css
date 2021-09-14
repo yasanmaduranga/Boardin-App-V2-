@@ -1,0 +1,43 @@
+.carousel-caption h1{
+    font-size: 500%;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px #000;
+  }
+  
+  .carousel-caption h3{
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+  }
+
+  .carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+
+  .welcome {
+    width: 75%;
+    /* border: 1px solid red; */
+  }
+  .welcome hr {
+    border-top: 2px solid #250303;
+    width: 95%;
+    margin-top:.3rem;
+    margin-bottom: 1rem;
+    
+  }
+
+  .jumbotron{
+    padding: 1rem;
+    border-radius: 0;
+    
+  }
+
+
+
+
+

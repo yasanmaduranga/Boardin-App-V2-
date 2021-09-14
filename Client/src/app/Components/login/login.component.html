@@ -1,0 +1,41 @@
+
+<flash-messages></flash-messages>
+<section class="Form ">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg-5">
+        <img src="../../../assets/images/home1.jpg" class="img-fluid">
+      </div>
+      <div class="col-lg-7 px-5 pt-5">
+        <a class="navbar-brand" routerLink="/"><img src="../../../assets/images/log.jpg" style="width: 50px;height: 40px;">Boarding Houses</a>
+        
+        <h4>Sign into your account</h4>
+        <form (submit)="login()" >
+          <div  class="form-row">
+            <div class="col-lg-7">
+              <input type="email" class="form-control my-4 p-2" name="email"  placeholder="Enter Your Email"
+              [(ngModel)]="email">
+            </div>
+          </div>
+          <div  class="form-row">
+            <div class="col-lg-7">
+              <input type="password" class="form-control my-1 p-2" name="password" placeholder="Enter Your Password"
+              [(ngModel)]="password">
+            </div>
+          </div>
+          <div  class="form-row">
+            
+            <div class="col-lg-7">
+              
+             <button  class="btn1 my-4 p-2" type="submit">
+                SIGN IN
+             </button> 
+            </div>
+          </div>
+          <p><b>Don't have an account? </b><a routerLink="/register" ><b>Sign Up Here</b></a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
