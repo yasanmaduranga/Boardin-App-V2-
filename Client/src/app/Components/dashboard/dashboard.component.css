@@ -1,81 +1,26 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-#main{
+
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    color: #0a0101;
+}
+
+div{
     font-family: 'Poppins', sans-serif;
     color: #0a0101;
-    background-color: rgba(222, 226, 230, 1);
-    height: 100vh;
-}
-/* nav bar styles*/
-
-/*sidenav*/
-.sidebar {
-    height: 100vh;
-    background-color: #1c2a48;
-    background-size: cover;
-    
 }
 
-.bottom-border{
-    border-bottom: 2px groove rgba(222, 226, 230, 1);
-}
-.navbar-brand{
-    color:  #18B5F9;
-    font-weight: bold;
-}
-.sidebar img{
-    width:90px ;
-    height:90px;
-}
-
-.sidebar-link{
-    transition: all .4s;
-    font-size: large;
-    border-bottom:1px solid white ;
-}
-
-.sidebar-link:hover{
-   
-    background-color: black;
-    border:2px solid #18B5F9 ;
-    font-weight:bold;
-   
-}
-.sidebar-link:active{
-    color: #18B5F9;
-    background-color: black;
-    border:2px solid red ;
-    font-weight:bold;
-   
-}
-
-
-/*end of sidenav*/
-
-/*topnav*/
-.top-bar {
-    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
-}
-
-.top-bar img{
-    height: 40px;
-    width: 120px;
-}
-
-#top-icon{
-    color:  rgba(13, 37, 62, 0.85);;
-}
-#top-icon:hover{
-    color: #18B5F9
-}
-
-@media( max-width: 768px){
-    .sidebar{
-        position: static;
-        height: auto;
-    }
-    .top-bar{
-        position: static;
-    }
-}
-/* end of nav bar styles */
+.navbar{
+    padding: 0.8rem;
+    /* color: blue; */
+  }
+  
+  .navbar-nav li {
+    padding-right: 20px;
+  }
+  .nav-link{
+    font-size: 1.1em;
+    color: #0a0101;
+  }

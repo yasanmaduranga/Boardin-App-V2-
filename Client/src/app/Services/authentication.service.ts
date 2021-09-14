@@ -108,7 +108,7 @@ export class AuthenticationService {
   }
 
   public profile(): Observable<any> {
-    return this.http.get('/users/profile', {
+    return this.http.get('http://localhost:3000/users/profile', {
       headers: { authorization: `${this.getToken()}`}
     })
   }
