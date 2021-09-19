@@ -18,6 +18,7 @@ export class RegisterComponent implements OnInit {
   email:string
   password:string
   role:string
+  phoneNumber: string
 
   constructor(public auth: AuthenticationService , private router: Router, private val:ValidationService,private flash:FlashMessagesService ,private toastr: ToastrService) { }
 
@@ -27,6 +28,7 @@ export class RegisterComponent implements OnInit {
       lastName: this.lastName,
       email:this.email,
       password:this.password,
+      phoneNumber: this.phoneNumber,
       role: 'client'
     }
 

@@ -21,7 +21,8 @@ router.post('/register', (req, res) => {
         lastName:req.body.lastName,
         email:req.body.email,
         password: req.body.password,
-        role: req.body.role
+        role: req.body.role,
+        phoneNumber: req.body.phoneNumber
     });
 
     User.find({email: req.body.email})

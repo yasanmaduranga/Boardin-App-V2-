@@ -18,6 +18,7 @@ export interface UserDetails {
   email: string
   password: string
   role: string
+  phoneNumber: string
   exp: number
   iat: number
 }
@@ -33,6 +34,7 @@ export interface TokenPayLoad {
   email: string
   password: string
   role: string
+  phoneNumber: string
 }
 
 @Injectable()
