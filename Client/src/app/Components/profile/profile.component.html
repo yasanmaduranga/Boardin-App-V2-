@@ -1,28 +1,48 @@
+<app-dashboard></app-dashboard>
 
-
-<div class="container">
-    
-    <div class="jumbotron mt-5">
-        
-        <div class="col sm-8 mx-auto">
-            <h1 class="text-center">PROFILE</h1>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10 mt-5 pt-5">
+            <div class="row z-depth-3" style=" box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+                <div class="col-sm-4 rounded-left" style="background-color: #F5F5F5;">
+                    <div class="card-block text-center text-dark" >
+                        <i class="far fa-user fa-7x mt-5"></i>
+                        <h2 class="font-weight-bold mt-4">{{details.firstName | uppercase}}</h2>
+                        <p>{{details.role | uppercase}}</p>
+                        <a href="#" data-toggle="modal" data-target="#confirm-pass"><i class="far fa-edit fa-2x mb-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-8 bg-white rounded-right">
+                    <h3 class="mt-3 text-center">Information</h3>
+                    <hr class="badge-primary mt-0 w-25">
+                    <br>
+                    <div class="row text-center">
+                        <div class="col-sm-6 ">
+                            <h5 class="font-weight-bold">First Name:</h5>
+                            <h6 class="text-muted">{{details.firstName}}</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class="font-weight-bold">Last Name:</h5>
+                            <h6 class="text-muted">{{details.lastName}}</h6>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row text-center">
+                        <div class="col-sm-6">
+                            <h5 class="font-weight-bold">Email:</h5>
+                            <h6 class="text-muted">{{details.email}}</h6>
+                        </div>
+                        <!-- <div class="col-sm-6">
+                            <h5 class="font-weight-bold">Telephone:</h5>
+                            <h6 class="text-muted">{{details.telephone}}</h6>
+                        </div> -->
+                    </div>
+                    <br><br>
+                    
+                </div>
+            </div>
         </div>
-        
-        <table class="table col md-6 mx-auto">
-            <tr>
-                <td>First Name</td>
-                <td>{{details.firstName}}</td>
-            </tr>
-            <tr>
-                <td>Last Name</td>
-                <td>{{details.lastName}}</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>{{details.email}}</td>
-            </tr>
-            
-        </table>
-        
-    </div>
+    </div> 
 </div>
+
+

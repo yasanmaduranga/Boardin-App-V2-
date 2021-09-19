@@ -46,33 +46,11 @@ export class LoginComponent implements OnInit {
       
       return false
     }
-    // if(!this.val.validatingPassword(credentials.password)){
-    //   this.flash.show('*** 6 - 10 characters should be in your password ***', {cssClass:'alert-danger',timeout:3000})
-    //   console.log('invalid password')
-    //   return false
-    // }
-
-    console.log(this.email+' & '+this.password)
-    
-    // this.auth.login(credentials).subscribe(
-    //   (user) => {
-    //     this.router.navigateByUrl('/dashboard')
-        
-    //   },
-    //   err => {
-    //     this.toastr.error("*** Sign in failed ***","",{
-    //       timeOut: 2000,
-    //     });
-    //     console.error(err);
-    //     // alert('*** Sign in failed ***')
-        
-    //   }
-    // )
 
 
     this.auth.login(credentials).subscribe(user =>{
       if(user.success){
-        this.router.navigateByUrl('/dashboard')
+        this.router.navigateByUrl('/profile')
       }else{
         this.toastr.error(user.message,"",{
           timeOut: 2000,

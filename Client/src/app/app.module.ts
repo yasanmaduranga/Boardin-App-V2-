@@ -23,9 +23,12 @@ import { HomeComponent } from './Components/home/home.component'
 import { LoginComponent } from './Components/login/login.component'
 import { RegisterComponent } from './Components/register/register.component';
 import { ProfileComponent } from './Components/profile/profile.component';
-import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { DashboardComponent } from './Components/dashboard-nav/dashboard.component';
 import { HomepageNavbarComponent } from './Components/homepage-navbar/homepage-navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { AdPostComponent } from './Components/ad-post/ad-post.component';
+import { PendingPostComponent } from './Components/pending-post/pending-post.component';
+import { MyListingsComponent } from './Components/my-listings/my-listings.component';
 
 
 
@@ -34,7 +37,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }, 
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'ad-post', component: AdPostComponent },
+  { path: 'pending-post', component: PendingPostComponent },
+  { path: 'my-listings', component: MyListingsComponent }
  
 ]
 
@@ -48,7 +54,10 @@ const routes: Routes = [
     ProfileComponent,
     DashboardComponent,
     HomepageNavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AdPostComponent,
+    PendingPostComponent,
+    MyListingsComponent
      
   ],
   imports: [
